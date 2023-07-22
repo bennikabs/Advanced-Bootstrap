@@ -2,7 +2,49 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --border-radius: 10px;
+  --border-radius: 6px;
+}
+@media (max-width: 600px) {
+  .yogai,
+  .weatheri,
+  .yogurti {
+    display: none;
+  }
+
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 32px !important;
+  }
+  p {
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .buttoni,
+  .navigation-links {
+    font-size: 16px !important;
+  }
+  .buttoni {
+    display: block;
+    width: 90%;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  h4 {
+    font-size: 32px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .img-fluid {
+    margin-bottom: 15px !important;
+    margin-top: 15px;
+    border-radius: var(--border-radius);
+    max-width: 95%;
+  }
 }
 
 h1,
@@ -16,6 +58,7 @@ h1 {
 }
 
 h2 {
+  padding-top: 40px;
   font-size: 48px;
 }
 
@@ -25,7 +68,6 @@ h3 {
 }
 
 p {
-  padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
@@ -37,19 +79,26 @@ p {
   justify-content: center;
 }
 
-.navigation-links a,
-button {
+.navigation-links a {
   margin: 20px;
-  border-radius: 4px;
   padding: 20px 15px;
+}
+.navigation-links a,
+.buttoni {
   text-decoration: none;
   text-transform: capitalize;
+  border-radius: var(--border-radius);
+}
+.buttoni {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .contact-link,
-button {
-  background: var(--primary-color);
+.buttoni {
   box-shadow: var(--box-shadow);
+  background: var(--primary-color);
   color: white;
 }
 
@@ -64,6 +113,7 @@ button {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  padding-bottom: 60px;
 }
 
 .email-link:hover {
@@ -73,5 +123,8 @@ button {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.2;
-  padding: 18px;
+  padding-top: 40px;
+}
+.img-fluid {
+  border-radius: var(--border-radius);
 }
